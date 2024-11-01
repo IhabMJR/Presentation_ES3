@@ -9,33 +9,34 @@
 ```mermaid
 graph TD;
 
-    %% Sections for Organization
-    subgraph A[Éléments d'Entrée]
-        A1[Capteur de présence - Caméra]
-        A2[Capteur de mouvement - Kinect]
-        A3[Microphone pour capture sonore]
+    %% Components
+    subgraph Equipement
+        PC[PC avec GPU dédié]
+        Cam[Caméra]
+        SP1[Haut-parleur 1]
+        SP2[Haut-parleur 2]
+        SP3[Haut-parleur 3]
+        SP4[Haut-parleur 4]
+        LED1[Écran LED 1]
+        LED2[Écran LED 2]
+        Wifi[(Wi-Fi)]
     end
 
-    subgraph B[Processeurs & Logiciels]
-        B1[PC avec GPU dédié]
-        B2[Logiciel interactif - TouchDesigner]
-        B3[Algorithme de détection de visage - FaceAPI]
-        B4[Module de traitement audio - Max/MSP]
-    end
+    %% Connections
+    Cam -->|USB| PC
+    PC -->|HDMI| LED1
+    PC -->|HDMI| LED2
+    PC -->|Jack/Audio Cable| SP1
+    PC -->|Jack/Audio Cable| SP2
+    PC -->|Jack/Audio Cable| SP3
+    PC -->|Jack/Audio Cable| SP4
+    Wifi --> PC
 
-    subgraph C[Éléments de Sortie]
-        C1[Écran LED pour affichage]
-        C2[Haut-parleurs pour ambiance sonore]
-    end
-
-    %% Flow Connections
-    A1 --> B3
-    A2 --> B3
-    A3 --> B4
-    
-    B1 --> B2
-    B2 --> C1
-    B4 --> C2
+    %% Labels for clarity
+    note right of Cam: Connexion vidéo et capture
+    note right of LED1: Affichage principal
+    note right of SP1: Audio surround
+    note right of Wifi: Connexion internet
 ```
 
 ## Plantation
