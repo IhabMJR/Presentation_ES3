@@ -1,8 +1,10 @@
 # Doppelgänger
 
+"Doppelgänger" est une installation interactive qui a la forme d'un miroir qui déforme le reflet de l'utilisateur, projettant des distortions sonores et visuelles, symbolisant l’exploitation de la vie privée par des groupes qui cherchent à abuser nos données personnelles.
+
 ## Devis Technique
 
-
+### Fournis par l'artiste
 
 ## Synoptique
 
