@@ -2,16 +2,12 @@
 
 ## Synoptique
 
-- **Éléments d'Entrée**: Captures user interaction and environmental input (presence, motion, and sound).
-- **Processeurs & Logiciels**: Processes input data with TouchDesigner, FaceAPI for facial detection, and Max/MSP for audio.
-- **Éléments de Sortie**: Outputs display visuals on LED screens and plays sound, enhancing the immersive ambiance of the installation.
-
 ```mermaid
 graph TD;
 
     %% Components
-    subgraph Equipement
-        PC[PC avec GPU dédié]
+        PC[PC]
+        AudioInterface[Interface audio avec 4 sorties]
         Cam[Caméra]
         SP1[Haut-parleur 1]
         SP2[Haut-parleur 2]
@@ -19,24 +15,18 @@ graph TD;
         SP4[Haut-parleur 4]
         LED1[Écran LED 1]
         LED2[Écran LED 2]
-        Wifi[(Wi-Fi)]
-    end
+        Routeur[Routeur]
 
     %% Connections
     Cam -->|USB| PC
+    PC -->|USB| AudioInterface
     PC -->|HDMI| LED1
     PC -->|HDMI| LED2
-    PC -->|Jack/Audio Cable| SP1
-    PC -->|Jack/Audio Cable| SP2
-    PC -->|Jack/Audio Cable| SP3
-    PC -->|Jack/Audio Cable| SP4
-    Wifi --> PC
-
-    %% Labels for clarity
-    note right of Cam: Connexion vidéo et capture
-    note right of LED1: Affichage principal
-    note right of SP1: Audio surround
-    note right of Wifi: Connexion internet
+    AudioInterface -->|Cable audio| SP1
+    AudioInterface -->|Cable audio| SP2
+    AudioInterface -->|Cable audio| SP3
+    AudioInterface -->|Cable audio| SP4
+    Routeur -->|UTP| PC
 ```
 
 ## Plantation
