@@ -54,6 +54,9 @@ graph TD;
 
 # Simulation
 
+<img src="assets/simulation_2.png"/>
+<img src="assets/simulation.png"/>
+
 # Scénarimage
 
 <img src="assets/Frame 1.png"/>
