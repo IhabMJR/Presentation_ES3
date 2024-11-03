@@ -12,7 +12,7 @@
 ### Vidéo
 
 - Écran ~40"
-- Écran ~20"
+- Écran ~12"
 - 2 Cables HDMI
 
 ### Audio
