@@ -52,6 +52,8 @@ graph TD;
 
 # Plantation
 
+<img src="assets/Frame 6.png"/>
+
 # Simulation
 
 <img src="assets/simulation_2.png"/>
