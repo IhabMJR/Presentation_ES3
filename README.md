@@ -4,7 +4,7 @@
 
 ## Fournis par l'artiste
 
-- PC Windows
+- PC/laptop Windows qui contient les logiciels (TouchDesigner, Max)
 - Camera webcam 1080p
 
 ## Fournis par le diffuseur
